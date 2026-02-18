@@ -10,5 +10,9 @@ public class MahasiswaMain10{
         mhs1.ubahKelas("SIB 1C");
         mhs1.updateIPK(3.75);
         mhs1.tampilkanInformasi();
+
+        Mahasiswa10 mhs2 = new Mahasiswa10("Ahmad Arivio", "254107060155", 3.65, "SIB 2C");
+        mhs2.updateIPK(3.69);
+        mhs2.tampilkanInformasi();
     }
 }
