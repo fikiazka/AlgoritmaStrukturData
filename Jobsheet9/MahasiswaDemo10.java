@@ -43,6 +43,8 @@ public class MahasiswaDemo10 {
                         int nilai = sc.nextInt();
                         dinilai.tugasDinilai(nilai);
                         System.out.printf("Nilai Tugas %s adalah %d\n", dinilai.nama, nilai);
+                        String biner = stack.konversiDesimalKeBiner(nilai);
+                        System.out.println("Nilai Biner Tugas: " + biner);
                     }
                     break;
 
@@ -70,10 +72,11 @@ public class MahasiswaDemo10 {
 
                 case 6:
                     System.out.println("Jumlah tugas yang dikumpulkan: " + stack.count());
+                    break;
                 default:
                     System.out.println("Pilihan tidak valid.");
             }
-        } while (pilih != 6);
+        } while (pilih != 0);
 
         sc.close();
     }
