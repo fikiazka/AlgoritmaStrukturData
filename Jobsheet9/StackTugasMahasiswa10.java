@@ -63,4 +63,12 @@ public class StackTugasMahasiswa10 {
             System.out.println("");
         }
     }
+
+    public Mahasiswa10 bottom() {
+        if (!isEmpty()) {
+            return stack[0];
+        } else {
+            return null;
+        }
+    }
 }
