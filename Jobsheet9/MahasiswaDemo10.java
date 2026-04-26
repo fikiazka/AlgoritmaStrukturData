@@ -60,7 +60,7 @@ public class MahasiswaDemo10 {
                 default:
                     System.out.println("Pilihan tidak valid.");
             }
-        } while (pilih >= 1 && pilih <= 4);
+        } while (pilih != 4);
 
         sc.close();
     }
