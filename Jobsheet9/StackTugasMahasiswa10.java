@@ -14,15 +14,17 @@ public class StackTugasMahasiswa10 {
     public boolean isFull() {
         if (top == size - 1) {
             return true;
+        } else {
+            return false;
         }
-        return false;
     }
 
     public boolean isEmpty() {
         if (top == -1) {
             return true;
+        } else {
+            return false;
         }
-        return false;
     }
 
     public void push(Mahasiswa10 mhs) {
@@ -59,9 +61,8 @@ public class StackTugasMahasiswa10 {
             for (int i = top; i >= 0; i--) {
                 System.out.println(stack[i].nama + "\t" + stack[i].nim + "\t" + stack[i].kelas);
             }
-        } else {
-            System.out.println("");
         }
+            System.out.println("");
     }
 
     public Mahasiswa10 bottom() {

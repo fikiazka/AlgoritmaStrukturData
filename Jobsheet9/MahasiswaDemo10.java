@@ -30,7 +30,7 @@ public class MahasiswaDemo10 {
                     System.out.print("Kelas: ");
                     String kelas = sc.nextLine();
 
-                    Mahasiswa10 mhs = new Mahasiswa10(nim, nama, kelas);
+                    Mahasiswa10 mhs = new Mahasiswa10(nama, nim, kelas);
                     stack.push(mhs);
                     System.out.printf("Tugas %s berhasil dikumpulkan\n", mhs.nama);
                     break;
@@ -73,6 +73,7 @@ public class MahasiswaDemo10 {
                 case 6:
                     System.out.println("Jumlah tugas yang dikumpulkan: " + stack.count());
                     break;
+
                 default:
                     System.out.println("Pilihan tidak valid.");
             }
